@@ -4,6 +4,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Flowbite](https://img.shields.io/badge/Flowbite-2563EB?style=for-the-badge&logo=flowbite&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
@@ -25,7 +26,8 @@ Actualmente solo se desarrolló la **parte de productos**; la funcionalidad de c
 - ⚛️ **React** - Librería para construir interfaces de usuario  
 - 📝 **TypeScript** - Lenguaje base fuertemente tipado  
 - ⚡ **Vite** - Herramienta de build y bundling  
-- 🎨 **TailwindCSS** - Framework de estilos utilitario  
+- 🎨 **TailwindCSS** - Framework de estilos utilitario
+- 🌊 Flowbite - Librería de componentes UI basada en TailwindCSS
 - 🐳 **Docker** - Contenerización de la aplicación  
 - 🤖 **Jenkins** - Integración continua y despliegue automatizado (CI/CD)  
 - 🐧 **Linux** - Sistema operativo del servidor de despliegue  
@@ -86,3 +88,4 @@ Esto permite que cualquier cambio en el repositorio se **pruebe y despliegue aut
 ![GitHub last commit](https://img.shields.io/github/last-commit/Charly3012/inventory-web-app?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Charly3012/inventory-web-app?style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues/Charly3012/inventory-web-app?style=for-the-badge)
+
