@@ -1,0 +1,25 @@
+# Node modules
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+package-lock.json
+
+# Dependencias locales
+dist
+out
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos de configuración de IDE
+.vscode
+.idea
+
+# Archivos de Git
+.git
+.gitignore

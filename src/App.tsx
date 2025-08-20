@@ -1,8 +1,8 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import Products from "./pages/products";
-import Categories from "./pages/categories";
+import Products from "./pages/Products";
+import Categories from "./pages/Categories";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
