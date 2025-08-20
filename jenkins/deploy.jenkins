@@ -1,0 +1,35 @@
+pipeline{
+    agent any
+
+    environment{
+        REMOTE_HOST = 'Frontend-uady'
+        IMAGE_NAME = 'charly3012/inventory-front:latest'
+        CONTAINER_NAME = 'inventory-front'
+        BACK_HOST='https://sunum.larchy.xyz/api'
+        PORT_MAPPING = '-p 8085:80'
+    }
+
+    stages{
+        stage('SSH deploy'){
+            steps{
+                sh """
+                    ssh ${REMOTE_HOST} << EOF
+
+                    docker stop ${CONTAINER_NAME} 2>/dev/null || echo "Contenedor no estaba en ejecución"
+                    docker rm ${CONTAINER_NAME} 2>/dev/null || echo "Contenedor no existía"
+
+                    docker pull ${IMAGE_NAME} || {echo "Error haciendo pull"}
+
+                    docker run -d \\
+                        --name ${CONTAINER_NAME} \\
+                        ${PORT_MAPPING} \\
+                        -e VITE_API_URL=${BACK_HOST} \\
+                        ${IMAGE_NAME} || {echo "Error haciendo pull"}
+
+                    exit
+                    EOF
+                """
+            }
+        }
+    }
+}
